@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#111214</color>
+    <color name="accent">#5B8DEF</color>
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="PickerDark" parent="android:Theme.Material.Dialog">
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+    <style name="PickerLight" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#3A6FD8</item>
+    </style>
+</resources>

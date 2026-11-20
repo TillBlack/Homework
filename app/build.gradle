@@ -1,0 +1,41 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'de.homework'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'de.homework'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('homework.jks')
+            storePassword '3EYZmdDGGGsa1P6nJHMm'
+            keyAlias 'homework'
+            keyPassword '3EYZmdDGGGsa1P6nJHMm'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        encoding 'UTF-8'
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
